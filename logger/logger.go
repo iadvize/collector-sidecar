@@ -18,8 +18,8 @@ package logger
 import (
 	"time"
 
-	"github.com/lestrrat/go-file-rotatelogs"
-	"github.com/Sirupsen/logrus"
+	rotatelogs "github.com/lestrrat/go-file-rotatelogs"
+	"github.com/sirupsen/logrus"
 )
 
 var log = logrus.New()

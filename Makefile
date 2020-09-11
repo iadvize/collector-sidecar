@@ -64,6 +64,10 @@ build-linux: ## Build collector-sidecar binary for Linux
 	@mkdir -p build/$(COLLECTOR_VERSION)/linux/amd64
 	GOOS=linux GOARCH=amd64 $(GO) build $(BUILD_OPTS) -v -i -o build/$(COLLECTOR_VERSION)/linux/amd64/graylog-collector-sidecar
 
+build-linux-arm64: ## Build collector-sidecar binary for Linux
+	@mkdir -p build/$(COLLECTOR_VERSION)/linux/amd64
+	GOOS=linux GOARCH=arm64 $(GO) build $(BUILD_OPTS) -v -i -o build/$(COLLECTOR_VERSION)/linux/arm64/graylog-collector-sidecar
+
 solaris-sigar-patch:
 	# https://github.com/cloudfoundry/gosigar/pull/28
 	@if [ ! -e vendor/github.com/cloudfoundry/gosigar/sigar_solaris.go ]; then \

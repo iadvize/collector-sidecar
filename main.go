@@ -24,7 +24,7 @@ import (
 	"runtime"
 
 	"github.com/kardianos/service"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 
 	"github.com/Graylog2/collector-sidecar/backends"
 	"github.com/Graylog2/collector-sidecar/cfgfile"

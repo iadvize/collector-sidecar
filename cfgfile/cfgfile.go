@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/urso/ucfg"
-	"github.com/urso/ucfg/yaml"
+	"github.com/elastic/go-ucfg"
+	"github.com/elastic/go-ucfg/yaml"
 
 	"github.com/Graylog2/collector-sidecar/logger"
 )

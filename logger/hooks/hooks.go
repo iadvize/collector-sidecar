@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 
 	"github.com/rifflock/lfshook"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 
 	"github.com/Graylog2/collector-sidecar/context"
 	"github.com/Graylog2/collector-sidecar/logger"

@@ -1,37 +1,42 @@
-hash: 8c3fa547f85bc8d3445aa71b93fac56bf51d503486867b79beadb97303d1c38d
-updated: 2017-06-19T12:35:05.244834712+02:00
+hash: 358a2c87df49c83c0c178bd4a1675d6b847487300cc7a0f00332c83b2ddb6624
+updated: 2020-09-11T14:26:30.41928+02:00
 imports:
 - name: bitbucket.org/tebeka/strftime
-  version: 2194253a23c090a4d5953b152a3c63fb5da4f5a4
-- name: github.com/elastic/gosigar
-  version: 2716c1fe855ee5c88eae707195e0688374458c92
-- name: github.com/go-ole/go-ole
-  version: 5e9c030faf78847db7aa77e3661b9cc449de29b7
+  version: 6a28f02cbd845d7837bd0dc2400da06b4952640c
+  repo: https://github.com/tebeka/strftime.git
+- name: github.com/elastic/go-ucfg
+  version: bbb885db44c36f545b8a57b6a74ff0d7b09a37c6
   subpackages:
-  - oleutil
+  - parse
+  - yaml
+- name: github.com/elastic/gosigar
+  version: fb74ef39d581f3ce75a6aa48a9a1548ef96c9292
+  subpackages:
+  - sys/windows
+- name: github.com/google/uuid
+  version: 0e4e31197428a347842d152773b4cace4645ca25
 - name: github.com/kardianos/osext
-  version: 10da29423eb9a6269092eebdc2be32209612d9d2
+  version: 2bc1f35cddc0cc527b4bc3dce8578fc2a6c11384
 - name: github.com/kardianos/service
-  version: 6d3a0ee7d3425d9d835debc51a0ca1ffa28f4893
+  version: a1c091bc7f8b6d1a8d28b47d8cf22068608051ef
 - name: github.com/lestrrat/go-file-rotatelogs
   version: bb1d28fd5ac7ec9873540d5bba975d009f271f67
 - name: github.com/pborman/uuid
-  version: c55201b036063326c5b1b89ccfe45a184973d073
+  version: 5b6091a6a160ee5ce12917b21ab96acec2a4fdc0
+- name: github.com/pkg/errors
+  version: 614d223910a179a466c1767a985424175c39b465
 - name: github.com/rakyll/goini
   version: 907cca0f578a5316fb864ec6992dc3d9730ec58c
 - name: github.com/rifflock/lfshook
-  version: 24f7833daaff6c3893606bb79d6722a7e9e089c5
-- name: github.com/Sirupsen/logrus
+  version: d01b26ad36d13dd8d165e1849b1a96ce57c7af9e
+- name: github.com/sirupsen/logrus
   version: d26492970760ca5d33129d2d799e34be5c4782eb
-- name: github.com/StackExchange/wmi
-  version: e54cbda6595d7293a7a468ccf9525f6bc8887f99
 - name: github.com/urso/ucfg
-  version: 30b040c279a4e6c83ded5cb44403a5c6fcd64e8d
-  subpackages:
-  - yaml
+  version: bbb885db44c36f545b8a57b6a74ff0d7b09a37c6
 - name: golang.org/x/sys
-  version: 833a04a10549a95dc34458c195cbad61bbb6cb4d
+  version: eff7692f900947b7d782d16af70ca32cc40774f0
   subpackages:
+  - internal/unsafeheader
   - unix
   - windows
   - windows/registry
@@ -39,5 +44,5 @@ imports:
   - windows/svc/eventlog
   - windows/svc/mgr
 - name: gopkg.in/yaml.v2
-  version: a83829b6f1293c91addabc89d0571c246397bbf4
+  version: 0b1645d91e851e735d3e23330303ce81f70adbe3
 testImports: []
